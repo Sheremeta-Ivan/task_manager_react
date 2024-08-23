@@ -22,7 +22,7 @@ function Layout() {
 
   return user ? (
     <div className="w-full h-screen flex flex-col md:flex-row">
-      <div className="w-[15%] h-screen bg-white sticky top-0 hidden md:block">
+      <div className="w-1/5 h-screen bg-white sticky top-0 hidden md:block">
         <Sidebar />
       </div>
       <MobileSidebar />
@@ -101,7 +101,7 @@ function App() {
           <Route path="/in-progress/:status" element={<Tasks />} />
           <Route path="/todo/:status" element={<Tasks />} />
           <Route path="/team" element={<Users />} />
-          <Route path="/trash" element={<Trash />} />
+          <Route path="/trashed" element={<Trash />} />
           <Route path="/task/:id" element={<TaskDetails />} />
         </Route>
 
